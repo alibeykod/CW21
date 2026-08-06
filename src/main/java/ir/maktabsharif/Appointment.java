@@ -27,6 +27,7 @@ public class Appointment {
 @Column(unique = true , nullable = false)
     private String trackingCode;
 @Column(nullable = false)
+@Enumerated(EnumType.STRING)
     private AppointmentStatus status;
 
     @Embedded
